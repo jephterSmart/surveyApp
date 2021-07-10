@@ -1,0 +1,50 @@
+.Header{
+    position:fixed;
+    width:100%;
+    height: 66px;
+    background-color: var(--primaryBColor);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 8px 10%;
+    top:0;
+    left:0;
+    opacity: 0;
+    animation: bringDown 300ms linear 500ms 1 normal both;
+    z-index: 1000;
+    box-shadow: 0 3px 5px rgba(161, 161, 161, 0.2);
+    
+}
+@keyframes bringDown {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.Logo{
+    font-size: 2rem;
+    font-family: Inconsolata,'Yanone Kaffeesatz',sans-serif;
+    color:var(--primaryBColor);
+    background-color: var(--primaryColor);
+    line-height: 2.2rem;
+    border-radius: 8px;
+    box-shadow: 1px 4px 8px rgba(10,10,10,0.2);
+    text-align: center;
+    vertical-align: center;
+    padding: 8px;
+    font-weight: 700;
+    letter-spacing: 8px;
+}
+.Logo a{
+    color: inherit;
+    text-decoration: none;
+}
+@media (max-width:600px) {
+    .Header{
+        padding: 8px 24px;
+        width: 130vw;
+        overflow: hidden;
+    }
+}

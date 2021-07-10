@@ -1,0 +1,35 @@
+.Section{
+    background-color: var(--primaryBColor);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: #000;
+    padding: 140px 10%;
+    
+    width: 100%;
+}
+.Section h2{
+    width: 100%;
+    font-size: 3.7rem;
+    font-weight: bolder;
+    letter-spacing: 0.3rem;
+    margin-bottom: 2.0rem;
+}
+.Submit{
+    margin-bottom: 36px;
+    color:var(--secondaryColor);
+    background-color: transparent;
+    border: 2px solid var(--primaryColor);
+    border-radius: 12px;
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-align: center;
+    width: 24ch;
+    cursor: pointer;
+
+}
+.Submit:hover , .Submit:active{
+    color: var(--primaryBColor);
+    background-color: var(--primaryColor);
+    border: 2px solid transparent;
+}

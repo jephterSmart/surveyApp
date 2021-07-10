@@ -1,0 +1,13 @@
+.Card{
+    width: 100%;
+    background-color: var(--secondaryBColor);
+    box-shadow: 1px 3px 5px var(--secondaryBColor);
+    color: var(--secondaryColor);
+    border-radius: 12px;
+    margin-bottom: 36px;
+    padding: 1.2rem;
+}
+.Card h3{
+    margin-bottom: 12px;
+    line-height: 2.0rem;
+}

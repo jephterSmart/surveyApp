@@ -1,0 +1,43 @@
+.Card{
+    width:100%;
+    padding: 1rem;
+    background-color: var(--primaryColor);
+    color: var(--secondaryBColor);
+    margin-bottom: 36px;
+    border-radius: 1rem;
+}
+.Card p:first-child{
+    width: 100%;
+    font-size: 1.2rem;
+    color:inherit;
+}
+.Grid{
+    margin-top: 0.5rem;
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.Selected{
+    width: 40%;
+   
+
+}
+.Selected ul{
+    list-style: none;
+    width:100%;
+    color:inherit;
+    margin-top: 1rem;
+}
+.Selected li{
+    margin-bottom: 0.8rem;
+}
+.Selected li.margin{
+    font-size: 1.3rem;
+    margin-left: 35px;
+}
+.Result{
+    color: var(--primaryBColor);
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+}

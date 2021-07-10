@@ -1,0 +1,25 @@
+.Input{
+    width: 90%;
+    margin: 8px auto;
+    margin-top: 0;
+}
+.Input label{
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color:inherit;
+    margin-bottom: 8px;
+
+}
+.Input input, .Input textarea{
+    width: 100%;
+    display: block;
+    padding: 8px;
+    line-height: 1.4;
+    font-size: 1rem;
+    outline: none;
+    background-color: var(--secondaryBColor);
+    border:none;
+    margin-bottom: 16px;
+    border: 1px solid var(--secondaryBColor);
+}

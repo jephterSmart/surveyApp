@@ -1,0 +1,60 @@
+.Navigation{
+    width: 100%;
+    text-align: end;
+    /* display: flex;
+    justify-content: flex-end;
+    align-items: center; */
+    
+}
+.Navigation>ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+}
+.Hamburger{
+    width: 46px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 36px;
+    padding-bottom: 12px;
+}
+.Hamburger span{
+    width: 100%;
+    min-height: 3px;
+    background-color: var(--secondaryColor);
+}
+.Hamburger:hover:active span{
+    background-color: var(--primaryColor);
+}
+.Cross{
+    width: 56px;
+    height: 36px;
+    position: relative;
+}
+.Cross span{
+    width: 100%;
+    min-height: 3px;
+    background-color: var(--secondaryColor);
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 0;
+}
+.Cross span:first-child{
+    transform: rotate(45deg);
+}
+.Cross span:last-child{
+    transform: rotate(-45deg);
+}
+
+ @media (max-width: 600px ) {
+     .Navigation>ul{
+         display: none;
+     }
+     .Mobile{
+         list-style: none;
+     }
+ }

@@ -1,0 +1,38 @@
+.List{
+    color:var(--secondaryColor);
+    border-bottom: 2px solid transparent;
+    padding: 8px;
+    margin:0 12px;
+    transition: border-bottom 300ms linear 100ms;
+}
+
+.List:active, .List.active{
+    border-bottom-color: var(--primaryColor);
+    color:var(--primaryColor);
+    font-weight: 700;
+   
+}
+
+.List a{
+    text-decoration: none;
+    color:inherit;
+    font-size: 0.9rem;
+}
+.List:hover{
+    color:var(--primaryColor);
+    
+}
+ @media (max-width: 600px) {
+     .List {
+         width: 90%;
+         margin: auto;
+         border-bottom: 0px;
+         padding-right: 42px;
+     }
+    .List a{
+        font-size: 3.3rem;
+    }
+    
+    
+    
+ }
