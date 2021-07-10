@@ -9,6 +9,6 @@ react default port.
 3. localStorage API
 
 You can see active running application on
-[https://surveyApp.herokuapp.com](https://surveyApp.herokuapp.com)
+[https://uzezi-survey-app.herokuapp.com](https://uzezi-survey-app.herokuapp.com)
 ### Thanks for viewing, enjoy.
 
