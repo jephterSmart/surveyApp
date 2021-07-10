@@ -4,26 +4,10 @@ import { setAnswer} from '../../store/reducers'
 import classes from './card.module.css';
 import { useDispatch } from "react-redux";
 import { useCallback, useEffect } from "react";
+import {shuffle} from '../../utils/shuffle';
+import {decodeHtmlCharCodes} from '../../utils/decodeHtml';
 
-const shuffle = (array) =>{
-   
-        var currentIndex = array.length,  randomIndex;
-      
-        // While there remain elements to shuffle...
-        while (0 !== currentIndex) {
-      
-          // Pick a remaining element...
-          randomIndex = Math.floor(Math.random() * currentIndex);
-          currentIndex--;
-      
-          // And swap it with the current element.
-          [array[currentIndex], array[randomIndex]] = [
-            array[randomIndex], array[currentIndex]];
-        }
-      
-        return array;
 
-}
 const Card = ({data}) => {
     const dispatch = useDispatch();
     const answers = [data.correct_answer].concat(data.incorrect_answers);
@@ -41,14 +25,15 @@ const Card = ({data}) => {
         checked: target.checked,
         correct_answer: data.correct_answer
     }))
-   },[data.correct_answer])
+   },[data.correct_answer]);
+   const question = decodeHtmlCharCodes(data.question);
     return(
         <div className={classes.Card}>
             
                 
-                <h3>{data.question}</h3>
+                <h3>{question}</h3>
                   <>
-                      {answers.map(answer =><Check  question={data.question}
+                      {answers.map(answer =><Check  question={question}
                       Label={answer} key={answer} callback={checkHandler} /> )}
                          
                  </>  

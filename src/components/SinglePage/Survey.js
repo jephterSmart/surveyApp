@@ -88,8 +88,8 @@ const Survey = ({rectRef,...rest}) => {
                 })
             ): 'Loading...'
         }
-        <button type='submit' 
-        className={classes.Submit}>Submit</button>
+        {state.data && <button type='submit' 
+        className={classes.Submit}>Submit</button>}
         </form>
         </>)}
         
