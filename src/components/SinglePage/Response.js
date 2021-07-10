@@ -19,7 +19,7 @@ const ResponeSection = ({rectRef,...rest})  => {
         <p>Thank you for filling in this survey or test, your result is:</p>
         <p className={classes.Score}><strong>{status.passed } / {status.total}</strong> which is 
          : <strong>{status.passed/status.total * 100 }%</strong></p>
-         <h3>These are your results:</h3>
+         <h3 style={{marginBottom: '1rem', marginTop:'1rem'}}>These are your results:</h3>
          <div>
             {
                 questions.map(question => {

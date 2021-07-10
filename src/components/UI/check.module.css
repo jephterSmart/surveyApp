@@ -24,6 +24,19 @@
   .label{
       display: inline-block;
       margin-left: 0.8rem;
+      position: relative;
+  }
+  .container.danger .label{
+    color:white;
+  }
+  .container.danger .label:after{
+    content: "";
+    width: 130%;
+    position:absolute;
+    left:-0.5rem;
+    top: 60%;
+    height: 2px;
+    background-color: red;
   }
   
   /* Create a custom checkbox */
@@ -50,7 +63,7 @@
   }
   
   /* Create the checkmark/indicator (hidden when not checked) */
-  .checkmark:after {
+  .checkmark:after, .checkmark:before {
     content: "";
     position: absolute;
     display: none;
@@ -73,4 +86,25 @@
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+  }
+  /* if we have a bad sign */
+  .container.danger .checkmark:after{
+    border-width: 0 3px 0 0;
+    height: 25px;
+    left: 10px;
+    top:3px;
+    width: 8px;
+
+  }
+  .container.danger .checkmark:before{
+    display: block;
+    left: 12px;
+    top: 8px;
+    width: 5px;
+    height: 25px;
+    border: solid white;
+    border-width: 0 3px 0 0;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
   }
